@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Lab4_inventarioDataSet5" targetNamespace="http://tempuri.org/Lab4_inventarioDataSet5.xsd" xmlns:mstns="http://tempuri.org/Lab4_inventarioDataSet5.xsd" xmlns="http://tempuri.org/Lab4_inventarioDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Lab4_inventarioConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Lab4_inventarioConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lab4_inventario.Properties.Settings.GlobalReference.Default.Lab4_inventarioConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sesion2TableAdapter" GeneratorDataComponentClassName="sesion2TableAdapter" Name="sesion2" UserDataComponentName="sesion2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Lab4_inventarioConnectionString (Settings)" DbObjectName="Lab4_inventario.dbo.sesion2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idsesion, nombreUsuario, apellidoUsuario, username, nombreRol, estado, horaEntrada, horaSalida FROM dbo.sesion2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idsesion" DataSetColumn="idsesion" />
+              <Mapping SourceColumn="nombreUsuario" DataSetColumn="nombreUsuario" />
+              <Mapping SourceColumn="apellidoUsuario" DataSetColumn="apellidoUsuario" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="nombreRol" DataSetColumn="nombreRol" />
+              <Mapping SourceColumn="estado" DataSetColumn="estado" />
+              <Mapping SourceColumn="horaEntrada" DataSetColumn="horaEntrada" />
+              <Mapping SourceColumn="horaSalida" DataSetColumn="horaSalida" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Lab4_inventarioDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Lab4_inventarioDataSet5" msprop:Generator_DataSetName="Lab4_inventarioDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sesion2" msprop:Generator_RowEvHandlerName="sesion2RowChangeEventHandler" msprop:Generator_RowDeletedName="sesion2RowDeleted" msprop:Generator_RowDeletingName="sesion2RowDeleting" msprop:Generator_RowEvArgName="sesion2RowChangeEvent" msprop:Generator_TablePropName="sesion2" msprop:Generator_RowChangedName="sesion2RowChanged" msprop:Generator_RowChangingName="sesion2RowChanging" msprop:Generator_TableClassName="sesion2DataTable" msprop:Generator_RowClassName="sesion2Row" msprop:Generator_TableVarName="tablesesion2" msprop:Generator_UserTableName="sesion2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idsesion" msprop:Generator_ColumnPropNameInRow="idsesion" msprop:Generator_ColumnPropNameInTable="idsesionColumn" msprop:Generator_ColumnVarNameInTable="columnidsesion" msprop:Generator_UserColumnName="idsesion" type="xs:int" />
+              <xs:element name="nombreUsuario" msprop:Generator_ColumnPropNameInRow="nombreUsuario" msprop:Generator_ColumnPropNameInTable="nombreUsuarioColumn" msprop:Generator_ColumnVarNameInTable="columnnombreUsuario" msprop:Generator_UserColumnName="nombreUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="apellidoUsuario" msprop:Generator_ColumnPropNameInRow="apellidoUsuario" msprop:Generator_ColumnPropNameInTable="apellidoUsuarioColumn" msprop:Generator_ColumnVarNameInTable="columnapellidoUsuario" msprop:Generator_UserColumnName="apellidoUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="username" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombreRol" msprop:Generator_ColumnPropNameInRow="nombreRol" msprop:Generator_ColumnPropNameInTable="nombreRolColumn" msprop:Generator_ColumnVarNameInTable="columnnombreRol" msprop:Generator_UserColumnName="nombreRol">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="estado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_UserColumnName="estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="horaEntrada" msprop:Generator_ColumnPropNameInRow="horaEntrada" msprop:Generator_ColumnPropNameInTable="horaEntradaColumn" msprop:Generator_ColumnVarNameInTable="columnhoraEntrada" msprop:Generator_UserColumnName="horaEntrada" type="xs:dateTime" />
+              <xs:element name="horaSalida" msprop:Generator_ColumnPropNameInRow="horaSalida" msprop:Generator_ColumnPropNameInTable="horaSalidaColumn" msprop:Generator_ColumnVarNameInTable="columnhoraSalida" msprop:Generator_UserColumnName="horaSalida" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:sesion2" />
+      <xs:field xpath="mstns:idsesion" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
